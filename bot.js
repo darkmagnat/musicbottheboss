@@ -343,7 +343,7 @@ client.on('message', message => {
 });
 
 const devs = ['383711936174620672' , '420287914149150731' , '370142013980540929' , '344084585144909845'];
-const adminprefix = "&";
+const adminprefix = "/";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!devs.includes(message.author.id)) return;
@@ -365,17 +365,5 @@ client.on('message', message => {
       message.channel.sendMessage(`**✅   ${argresult}**`)
   }
   });
-
-client.on("ready", async  => {
-setInterval(function(){
-client.channels.find('id', '504323391428362271').setName("W");
-client.channels.find('id', '504323391428362271').setName("We");
-client.channels.find('id', '504323391428362271').setName("Wel");
-client.channels.find('id', '504323391428362271').setName("Welc");
-client.channels.find('id', '504323391428362271').setName("Welco");
-client.channels.find('id', '504323391428362271').setName("Welcom");
-client.channels.find('id', '504323391428362271').setName("Welcome");
-  }, 3000);
-});
 
 client.login(process.env.BOT_TOKEN);
