@@ -366,4 +366,16 @@ client.on('message', message => {
   }
   });
 
+client.on("ready", async  => {
+setInterval(function(){
+client.channels.find('id', '504323391428362271').setName("W");
+client.channels.find('id', '504323391428362271').setName("We");
+client.channels.find('id', '504323391428362271').setName("Wel");
+client.channels.find('id', '504323391428362271').setName("Welc");
+client.channels.find('id', '504323391428362271').setName("Welco");
+client.channels.find('id', '504323391428362271').setName("Welcom");
+client.channels.find('id', '504323391428362271').setName("Welcome");
+  }, 3000);
+});
+
 client.login(process.env.BOT_TOKEN);
